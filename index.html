@@ -13,23 +13,25 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<title>Rise Creative</title>
 </head>
-
+<svg display="none">
+	<g id="play">
+		<rect width="30" height="30" rx="15" fill="white" />
+		<path
+			d="M19.75 13.701C20.75 14.2783 20.75 15.7217 19.75 16.299L13.75 19.7631C12.75 20.3405 11.5 19.6188 11.5 18.4641L11.5 11.5359C11.5 10.3812 12.75 9.65951 13.75 10.2369L19.75 13.701Z"
+			fill="#2B303B" />
+	</g>
+	<g id="arrow">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M0 8.00003C0 7.77272 0.0903001 7.55471 0.251035 7.39398C0.41177 7.23324 0.629774 7.14294 0.857088 7.14294H21.0724L15.6779 1.75015C15.5169 1.58921 15.4265 1.37093 15.4265 1.14333C15.4265 0.915726 15.5169 0.697447 15.6779 0.536508C15.8388 0.37557 16.0571 0.285156 16.2847 0.285156C16.5123 0.285156 16.7306 0.37557 16.8915 0.536508L23.7482 7.39321C23.828 7.47283 23.8913 7.56741 23.9346 7.67154C23.9778 7.77567 24 7.88729 24 8.00003C24 8.11277 23.9778 8.2244 23.9346 8.32852C23.8913 8.43265 23.828 8.52723 23.7482 8.60685L16.8915 15.4636C16.7306 15.6245 16.5123 15.7149 16.2847 15.7149C16.0571 15.7149 15.8388 15.6245 15.6779 15.4636C15.5169 15.3026 15.4265 15.0843 15.4265 14.8567C15.4265 14.6291 15.5169 14.4109 15.6779 14.2499L21.0724 8.85712H0.857088C0.629774 8.85712 0.41177 8.76682 0.251035 8.60608C0.0903001 8.44535 0 8.22734 0 8.00003Z"
+			fill="#24272E" />
+	</g>
+	<g id="star">
+		<path d="M15.8746 1.0414C16.2612 -0.00333762 17.7388 -0.00333488 18.1254 1.04141L21.9402 11.3508C22.0618 11.6792 22.3208 11.9382 22.6492 12.0598L32.9586 15.8746C34.0033 16.2612 34.0033 17.7388 32.9586 18.1254L22.6492 21.9402C22.3208 22.0618 22.0618 22.3208 21.9402 22.6492L18.1254 32.9586C17.7388 34.0033 16.2612 34.0033 15.8746 32.9586L12.0598 22.6492C11.9382 22.3208 11.6792 22.0618 11.3508 21.9402L1.0414 18.1254C-0.0033375 17.7388 -0.00333488 16.2612 1.04141 15.8746L11.3508 12.0598C11.6792 11.9382 11.9382 11.6792 12.0598 11.3508L15.8746 1.0414Z" fill="#F0E714"/>
+	</g>
+</svg>
 <body>
-	<svg height="0">
-		<g id="play">
-			<rect width="30" height="30" rx="15" fill="white" />
-			<path
-				d="M19.75 13.701C20.75 14.2783 20.75 15.7217 19.75 16.299L13.75 19.7631C12.75 20.3405 11.5 19.6188 11.5 18.4641L11.5 11.5359C11.5 10.3812 12.75 9.65951 13.75 10.2369L19.75 13.701Z"
-				fill="#2B303B" />
-		</g>
-		<g id="arrow">
-			<path fill-rule="evenodd" clip-rule="evenodd"
-				d="M0 8.00003C0 7.77272 0.0903001 7.55471 0.251035 7.39398C0.41177 7.23324 0.629774 7.14294 0.857088 7.14294H21.0724L15.6779 1.75015C15.5169 1.58921 15.4265 1.37093 15.4265 1.14333C15.4265 0.915726 15.5169 0.697447 15.6779 0.536508C15.8388 0.37557 16.0571 0.285156 16.2847 0.285156C16.5123 0.285156 16.7306 0.37557 16.8915 0.536508L23.7482 7.39321C23.828 7.47283 23.8913 7.56741 23.9346 7.67154C23.9778 7.77567 24 7.88729 24 8.00003C24 8.11277 23.9778 8.2244 23.9346 8.32852C23.8913 8.43265 23.828 8.52723 23.7482 8.60685L16.8915 15.4636C16.7306 15.6245 16.5123 15.7149 16.2847 15.7149C16.0571 15.7149 15.8388 15.6245 15.6779 15.4636C15.5169 15.3026 15.4265 15.0843 15.4265 14.8567C15.4265 14.6291 15.5169 14.4109 15.6779 14.2499L21.0724 8.85712H0.857088C0.629774 8.85712 0.41177 8.76682 0.251035 8.60608C0.0903001 8.44535 0 8.22734 0 8.00003Z"
-				fill="#24272E" />
-		</g>
-	</svg>
 	<header class="header">
-		<div class="container container--header">
+		<div class="container">
 			<div class="header_inner">
 				<div class="header_top">
 					<div class="logo">
@@ -61,42 +63,64 @@
 						</div>
 					</nav>
 				</div>
-				<div class="home">
-					<div class="home_info">
-						<h2>We’re a Creative Design Agency</h2>
-						<p class="home_info_text">We are delivering top level digital services best experlenced team, just get stared </p>
-						<div class="btn_container">
-							<button class="btn btn--yellow">Get started
-								<svg class="arrow">
-									<use xlink:href="#arrow" />
-								</svg>
-							</button>
-							<a class="play_link" href="#">
-								<svg class="play">
-									<use xlink:href="#play" />
-								</svg>
-								How it works
-							</a>
-						</div>
-						<div class="home_statistics">
-							<ul class="statistics_list">
-								<li class="statistics_item">
-									<h3 class="statistics_number">20+</h3>
-									<p class="statistics_text">Years of Excellent</p>
-								</li>
-								<li class="statistics_item">
-									<h3 class="statistics_number">90%</h3>
-									<p class="statistics_text">Happy Client</p>
-								</li>
-								<li class="statistics_item">
-									<h3 class="statistics_number">80%</h3>
-									<p class="statistics_text">Project  Succes</p>
-								</li>
-							</ul>
+				
+			</div>
+		</div>
+		<section class="home">
+			<div class="home_container">
+				<div class="home_info">
+					<svg class="star_icon">
+						<use xlink:href="#star" />
+					</svg>
+					<h2>We’re a Creative Design Agency</h2>
+					<p class="home_info_text">We are delivering top level digital services best experlenced team, just get stared </p>
+					<div class="btn_container">
+						<button class="btn btn--yellow">Get started
+							<svg class="arrow">
+								<use xlink:href="#arrow" />
+							</svg>
+						</button>
+						<a class="play_link" href="#">
+							<svg class="play">
+								<use xlink:href="#play" />
+							</svg>
+							How it works
+						</a>
+					</div>
+					<div class="home_statistics">
+						<ul class="statistics_list">
+							<li class="statistics_item">
+								<h3 class="statistics_number">20<span>+</span></h3>
+								<p class="statistics_text">Years of Excellent</p>
+							</li>
+							<li class="statistics_item">
+								<h3 class="statistics_number">90<span>%</span></h3>
+								<p class="statistics_text">Happy Client</p>
+							</li>
+							<li class="statistics_item">
+								<h3 class="statistics_number">80<span>%</span></h3>
+								<p class="statistics_text">Project  Succes</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="home_info_img">
+					<img src="images/home.jpg" alt="home.jpg">
+					<div class="market">
+						<span>Market Static</span>
+						<h3>Agency Overview</h3>
+						<img src="images/market.jpg" alt="market static">
+						<div class="market_calendar">
+							<span>Jan</span>
+							<span>Feb</span>
+							<span>Mar</span>
+							<span>Apr</span>
+							<span>May</span>
 						</div>
 					</div>
-					<img class="home_info_img" src="images/home.jpg" alt="home.jpg">
 				</div>
+			</div>
+			<div class="container">
 				<div class="sponsors">
 					<img src="images/google.png" alt="google">
 					<img src="images/dropbox.png" alt="dropbox">
@@ -105,8 +129,9 @@
 					<img src="images/hubspot.png" alt="hubspot">
 				</div>
 			</div>
-		</div>
+	</section>
 	</header>
+	
 </body>
 
 </html>
