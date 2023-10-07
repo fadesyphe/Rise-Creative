@@ -342,11 +342,11 @@
 }
 .peculiarities_list {
 }
-.peculiarities_item {
+.peculiarities_list_item {
 	display: flex;
 }
 
-.peculiarities_item img {
+.peculiarities_list_item img {
 	width: 68px;
 	height: 68px;
 	border-radius: 50%;
@@ -375,6 +375,7 @@
 	height: 100%;
 	max-height: 653px;
 	position: relative;
+	z-index: 10;
 }
 
 .peculiarities_img:after {
@@ -383,4 +384,51 @@
 	z-index: -1;
 	bottom: -55px;
 	right: -44px;
+}
+
+.searvices {
+	padding-top: 140px;
+}
+
+.searvices_inner {
+	text-align: center;
+}
+.section_info p {
+	max-width: 664px;
+	margin: 0 auto;
+}
+.searvices_list {
+	padding-top: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.searvices_list_item {
+	max-width: 297px;
+	padding: 32px;
+	background-color: #fff;
+	margin-bottom: 30px;
+	transition: box-shadow .3s ease;
+}
+
+.searvices_list_item:hover {
+	box-shadow: 0px 30px 50px -10px rgba(152, 151, 151, 0.37);
+}
+
+.searvicess_list_item img {
+	border-radius: 50%;
+}
+
+.searvices_list_item h4 {
+	font-size: 24px;
+	line-height: 1.6;
+	max-width: 210px;
+}
+
+.searvices_list_item p {
+	font-size: 18px;
+}
+
+.searvices_info {
+
 }
