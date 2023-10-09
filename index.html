@@ -11,6 +11,8 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<title>Rise Creative</title>
 </head>
 <svg display="none">
@@ -98,7 +100,7 @@
 							</li>
 							<li class="statistics_item">
 								<h3 class="statistics_number">80<span>%</span></h3>
-								<p class="statistics_text">Project  Succes</p>
+								<p class="statistics_text">Project Succes</p>
 							</li>
 						</ul>
 					</div>
@@ -256,6 +258,114 @@
 			</div>
 		</div>
 	</section>
+	<section class="project">
+		<div class="container">
+			<div class="project_inner">
+					<h3 class="section_suptitle">Ready to use</h3>
+					<div class="project_title">
+						<h2 class="section_title">Elegant And <br> Impressive Inner Pages</h2>
+						<div class="project-button-wrapper">
+							<button class="button button--prev">
+								<svg>
+									<use xlink:href="arrow" />
+								</svg>
+							</button>
+							<button class="button button--next">
+								<svg>
+									<use xlink:href="arrow" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="swiper project_swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="project_img" src="images/project1.jpg" alt="Hotel Booking Website">
+								<h4 class="project_title">Hotel Booking  Website</h4>
+								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<a href="#" class="project_link">
+									Read Case Study
+									<svg>
+										<use xlink:href="#arrow" />
+									</svg>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<img class="project_img" src="images/project2.jpg" alt="UI/UX  App Design">
+								<h4 class="project_title">UI/UX  App Design</h4>
+								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<a href="#" class="project_link">
+									Read Case Study
+									<svg>
+										<use xlink:href="#arrow" />
+									</svg>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<img class="project_img" src="images/project3.jpg" alt="Ceramic E-commerce Landing Page">
+								<h4 class="project_title">Ceramic E-commerce Landing Page</h4>
+								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<a href="#" class="project_link">
+									Read Case Study
+									<svg>
+										<use xlink:href="#arrow" />
+									</svg>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<img class="project_img" src="images/project1.jpg" alt="Hotel Booking Website">
+								<h4 class="project_title">Hotel Booking  Website</h4>
+								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<a href="#" class="project_link">
+									Read Case Study
+									<svg>
+										<use xlink:href="#arrow" />
+									</svg>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<img class="project_img" src="images/project2.jpg" alt="UI/UX  App Design">
+								<h4 class="project_title">UI/UX  App Design</h4>
+								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<a href="#" class="project_link">
+									Read Case Study
+									<svg>
+										<use xlink:href="#arrow" />
+									</svg>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<img class="project_img" src="images/project3.jpg" alt="Ceramic E-commerce Landing Page">
+								<h4 class="project_title">Ceramic E-commerce Landing Page</h4>
+								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<a href="#" class="project_link">
+									Read Case Study
+									<svg>
+										<use xlink:href="#arrow" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<script type="module">
+		import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+		const swiper = new Swiper(".project_swiper", {
+			slidesPerView: 2,
+			loop: true,
+			Navigation: {
+				nextEl: ".button--next",
+				prevEl: ".button--prev"
+			}
+		})
+
+	</script>
+	<script src="app.js"></script>
 </body>
 
 </html>

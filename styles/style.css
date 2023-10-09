@@ -432,3 +432,51 @@
 .searvices_info {
 
 }
+
+
+.project {
+	padding-top: 120px;
+
+}
+
+.project_inner {
+
+}
+
+.project_title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 58px;
+}
+
+.project-button-wrapper {
+
+}
+
+.button--prev, .button--next {
+	color: black;
+	border-radius: 50%;
+	border: 2px solid #636770;
+}
+
+
+.button--prev svg, .button--next svg {
+	fill: #828282;
+	height: 18px;
+	width: 18px;
+}
+
+.swiper-slide {
+	max-width: 540px;
+}
+
+.project_img {
+	max-width: 540px;
+	max-height: 641px;
+}
+
+
+
+.project_link {
+}
