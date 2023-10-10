@@ -68,60 +68,60 @@
 			</div>
 		</div>
 		<section class="home">
-			<div class="home_container">
-				<div class="home_info">
-					<svg class="star_icon">
-						<use xlink:href="#star" />
-					</svg>
-					<h2>We’re a Creative Design Agency</h2>
-					<p class="home_info_text">We are delivering top level digital services best experlenced team, just get stared </p>
-					<div class="btn_container">
-						<button class="btn btn--yellow">Get started
-							<svg class="arrow">
-								<use xlink:href="#arrow" />
-							</svg>
-						</button>
-						<a class="play_link" href="#">
-							<svg class="play">
-								<use xlink:href="#play" />
-							</svg>
-							How it works
-						</a>
+			<div class="container">
+				<div class="home_container">
+					<div class="home_info">
+						<svg class="star_icon">
+							<use xlink:href="#star" />
+						</svg>
+						<h2>We’re a Creative Design Agency</h2>
+						<p class="home_info_text">We are delivering top level digital services best experlenced team, just get stared </p>
+						<div class="btn_container">
+							<button class="btn btn--yellow">Get started
+								<svg class="arrow">
+									<use xlink:href="#arrow" />
+								</svg>
+							</button>
+							<a class="play_link" href="#">
+								<svg class="play">
+									<use xlink:href="#play" />
+								</svg>
+								How it works
+							</a>
+						</div>
+						<div class="home_statistics">
+							<ul class="statistics_list">
+								<li class="statistics_item">
+									<h3 class="statistics_number">20<span>+</span></h3>
+									<p class="statistics_text">Years of Excellent</p>
+								</li>
+								<li class="statistics_item">
+									<h3 class="statistics_number">90<span>%</span></h3>
+									<p class="statistics_text">Happy Client</p>
+								</li>
+								<li class="statistics_item">
+									<h3 class="statistics_number">80<span>%</span></h3>
+									<p class="statistics_text">Project Succes</p>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="home_statistics">
-						<ul class="statistics_list">
-							<li class="statistics_item">
-								<h3 class="statistics_number">20<span>+</span></h3>
-								<p class="statistics_text">Years of Excellent</p>
-							</li>
-							<li class="statistics_item">
-								<h3 class="statistics_number">90<span>%</span></h3>
-								<p class="statistics_text">Happy Client</p>
-							</li>
-							<li class="statistics_item">
-								<h3 class="statistics_number">80<span>%</span></h3>
-								<p class="statistics_text">Project Succes</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="home_info_img">
-					<img src="images/home.jpg" alt="home.jpg">
-					<div class="market">
-						<h4>Market Static</h4>
-						<h3>Agency Overview</h3>
-						<img src="images/market.jpg" alt="market static">
-						<div class="market_calendar">
-							<span>Jan</span>
-							<span>Feb</span>
-							<span>Mar</span>
-							<span>Apr</span>
-							<span>May</span>
+					<div class="home_info_img">
+						<img src="images/home.jpg" alt="home.jpg">
+						<div class="market">
+							<h4>Market Static</h4>
+							<h3>Agency Overview</h3>
+							<img src="images/market.jpg" alt="market static">
+							<div class="market_calendar">
+								<span>Jan</span>
+								<span>Feb</span>
+								<span>Mar</span>
+								<span class="active">Apr</span>
+								<span>May</span>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="container">
 				<div class="sponsors">
 					<img src="images/google.png" alt="google">
 					<img src="images/dropbox.png" alt="dropbox">
@@ -260,32 +260,24 @@
 	</section>
 	<section class="project">
 		<div class="container">
-			<div class="project_inner">
+			<div class="swiper project_inner">
 					<h3 class="section_suptitle">Ready to use</h3>
-					<div class="project_title">
+					<div class="project_header">
 						<h2 class="section_title">Elegant And <br> Impressive Inner Pages</h2>
 						<div class="project-button-wrapper">
-							<button class="button button--prev">
-								<svg>
-									<use xlink:href="arrow" />
-								</svg>
-							</button>
-							<button class="button button--next">
-								<svg>
-									<use xlink:href="arrow" />
-								</svg>
-							</button>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
 					</div>
-					<div class="swiper project_swiper">
+					<div class="project_swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<img class="project_img" src="images/project1.jpg" alt="Hotel Booking Website">
 								<h4 class="project_title">Hotel Booking  Website</h4>
-								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<p class="project_text">Business owners and managers lead by example. The values and work ethic displayed by a</p>
 								<a href="#" class="project_link">
 									Read Case Study
-									<svg>
+									<svg class="arrow">
 										<use xlink:href="#arrow" />
 									</svg>
 								</a>
@@ -293,21 +285,21 @@
 							<div class="swiper-slide">
 								<img class="project_img" src="images/project2.jpg" alt="UI/UX  App Design">
 								<h4 class="project_title">UI/UX  App Design</h4>
-								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<p class="project_text">Business owners and managers lead by example. The values and work ethic displayed by a</p>
 								<a href="#" class="project_link">
 									Read Case Study
-									<svg>
+									<svg class="arrow">
 										<use xlink:href="#arrow" />
 									</svg>
 								</a>
 							</div>
 							<div class="swiper-slide">
 								<img class="project_img" src="images/project3.jpg" alt="Ceramic E-commerce Landing Page">
-								<h4 class="project_title">Ceramic E-commerce Landing Page</h4>
-								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<h4 class="project_title">Ceramic E-commerce</h4>
+								<p class="project_text">Business owners and managers lead by example. The values and work ethic displayed by a</p>
 								<a href="#" class="project_link">
 									Read Case Study
-									<svg>
+									<svg class="arrow">
 										<use xlink:href="#arrow" />
 									</svg>
 								</a>
@@ -315,10 +307,10 @@
 							<div class="swiper-slide">
 								<img class="project_img" src="images/project1.jpg" alt="Hotel Booking Website">
 								<h4 class="project_title">Hotel Booking  Website</h4>
-								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<p class="project_text">Business owners and managers lead by example. The values and work ethic displayed by a</p>
 								<a href="#" class="project_link">
 									Read Case Study
-									<svg>
+									<svg class="arrow">
 										<use xlink:href="#arrow" />
 									</svg>
 								</a>
@@ -326,21 +318,21 @@
 							<div class="swiper-slide">
 								<img class="project_img" src="images/project2.jpg" alt="UI/UX  App Design">
 								<h4 class="project_title">UI/UX  App Design</h4>
-								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<p class="project_text">Business owners and managers lead by example. The values and work ethic displayed by a</p>
 								<a href="#" class="project_link">
 									Read Case Study
-									<svg>
+									<svg class="arrow">
 										<use xlink:href="#arrow" />
 									</svg>
 								</a>
 							</div>
 							<div class="swiper-slide">
 								<img class="project_img" src="images/project3.jpg" alt="Ceramic E-commerce Landing Page">
-								<h4 class="project_title">Ceramic E-commerce Landing Page</h4>
-								<p class="project_title">Business owners and managers lead by example. The values and work ethic displayed by a</p>
+								<h4 class="project_title">Ceramic E-commerce</h4>
+								<p class="project_text">Business owners and managers lead by example. The values and work ethic displayed by a</p>
 								<a href="#" class="project_link">
 									Read Case Study
-									<svg>
+									<svg class="arrow">
 										<use xlink:href="#arrow" />
 									</svg>
 								</a>
@@ -356,12 +348,14 @@
 	<script type="module">
 		import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 		const swiper = new Swiper(".project_swiper", {
-			slidesPerView: 2,
+			slidesPerView: 2.5,
+			spaceBetween: 30,
+			speed: 2000,
 			loop: true,
-			Navigation: {
-				nextEl: ".button--next",
-				prevEl: ".button--prev"
-			}
+			navigation: {
+    		nextEl: '.swiper-button-next',
+    		prevEl: '.swiper-button-prev',
+  		},
 		})
 
 	</script>

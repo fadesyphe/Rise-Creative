@@ -6,7 +6,7 @@
 .header {
 	padding: 36px 0 61px;
 	background: url("../images/header-background.png") no-repeat #101C26;
-	background-position: bottom bottom;
+	background-position: 50% 0%;
 }
 
 .header_top {
@@ -104,7 +104,7 @@
 }
 
 .home_info {
-	padding: 57px 80px 0;
+	padding: 57px 80px 0 0;
 	width: 100%;
 	max-width: 714px;
 	position: relative;
@@ -247,13 +247,18 @@
 }
 
 .market_calendar span {
-	font-style: 12px;
+	font-size: 12px;
 	line-height: 1.5;
 	font-weight: 500;
 	color: #24272E;
-	padding: 0;
+	padding: 2px 7px;
 	border-radius: 0;
 	background-color: transparent;
+}
+
+.market_calendar .active {
+	background-color: #F7F289;
+	border-radius: 9px;
 }
 
 
@@ -443,7 +448,7 @@
 
 }
 
-.project_title {
+.project_header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -451,20 +456,69 @@
 }
 
 .project-button-wrapper {
-
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
 }
 
-.button--prev, .button--next {
-	color: black;
+.swiper-button-next,
+.swiper-button-prev {
+	position: relative !important;
+	border: 3px #828282 solid;
 	border-radius: 50%;
-	border: 2px solid #636770;
+	margin: 0 10px;
+	width: 43.2px !important;
+	height: 43.2px !important;
+	transition: .3s ease;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 18px !important;
+	color: #828282;
+	padding: 20px 0;
+	position: absolute;
+	left: 7px;
+	transition: .3s ease;
+}
+
+.swiper-button-next:after {
+	left: 24px;
 }
 
 
-.button--prev svg, .button--next svg {
-	fill: #828282;
-	height: 18px;
-	width: 18px;
+.swiper-button-next:before,
+.swiper-button-prev:before {
+	content: "";
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	transform: translateY(-75%);
+	border-radius: 10px;
+	width: 12px;
+	height: 3px;
+	padding: 0 12px;
+	background-color: #828282;
+	transition: .3s ease;
+
+}
+.swiper-button-prev:before {
+	left: 8px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+	border-color: #636770;
+}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+	color: #636770;
+}
+
+.swiper-button-next:hover:before,
+.swiper-button-prev:hover:before {
+	background-color: #636770;
 }
 
 .swiper-slide {
@@ -476,7 +530,37 @@
 	max-height: 641px;
 }
 
+.project_title {
+	font-weight: 500;
+	font-size: 34px;
+	line-height: 0.82;
+	color: #24272E;
+	padding-top: 40px;
+}
+
+.project_text {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #555C68;
+	padding: 20px 0 16px;
+}
 
 
 .project_link {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #24272E;
+	transition: .5s ease;
+}
+
+.project_link:hover {
+	color: #24272e;
+	opacity: 0.7;
+}
+
+.project_link .arrow {
+	transform: scale(0.8);
 }
