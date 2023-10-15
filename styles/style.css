@@ -6,6 +6,7 @@
 .header {
 	padding: 36px 0 61px;
 	background: url("../images/header-background.png") no-repeat #101C26;
+	background-size: container;
 	background-position: 50% 0%;
 }
 
@@ -201,7 +202,8 @@
 
 .star_icon {
 	width: 38px;
-	aspect-ratio: 1;
+	height: 38px;
+	fill: #F0E714;
 	position: absolute;
 	right: 175px;
 	top: 200px;
@@ -563,4 +565,114 @@
 
 .project_link .arrow {
 	transform: scale(0.8);
+}
+.testimonial {
+	padding-top: 140px;
+}
+
+.testimonial_inner {
+	text-align: center;
+}
+
+.testimonial_inner .section_text {
+	padding-bottom: 80px;
+}
+
+.testimonial_slider {
+	max-width: 1420px;
+	max-height: 406px;
+	overflow: hidden;
+	margin: 0 auto 82px;
+}
+
+.testimonial_slider_carousel {
+	width: 2362px;
+	display: flex;
+	position: relative;
+	left: 435px;
+	gap: 0 30px;
+}
+
+.testimonial_info {
+	max-width: 568px;
+	max-height: 406px;
+	padding: 32px 60px;
+	background-color: #fff;
+	filter: drop-shadow(0 25px 32px rgba(67, 67, 67, 0.14));
+	margin-top: 32px;
+}
+
+.testimonial_info--active {
+	margin-top: 0;
+}
+.testimonial_autor {
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.testimonial_autor_name {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.71;
+	color: #000;
+	margin: 10px 0 4px;
+}
+.testimonial_autor_proffesion {
+	font-size: 12px;
+	font-family: "Inter", sans-serif;
+	line-height: 1.5;
+	text-align: center;
+	color: #8791A0;
+	margin-bottom: 4px;
+
+}
+.testimonial_star_wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	margin-bottom: 10px;
+}
+.testimonial_star {
+	width: 16px;
+	height: 16px;
+	fill: #F37825;
+}
+
+.testimonial_star path {
+	fill: black;
+}
+
+.testimonial_star--gray {
+	fill: gray;
+}
+.testimonial_text {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.9;
+	letter-spacing: -1.1%;
+	text-align: center;
+	color: #555C68;
+}
+
+.testiomonial_pagination {
+	display: flex;
+	gap: 0 16px;
+	justify-content: center;
+}
+
+.dot {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #D2D2D2;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.dot:hover, .dot.active {
+	width: 20px;
+	height: 20px;
+	background-color: #101C26;
 }
