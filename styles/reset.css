@@ -35,6 +35,10 @@ a, a:hover {
 	color: inherit;
 }
 
+a:focus, button:focus {
+	outline: none;
+}
+
 aside, nav, footer, header, section, main {
 	display: block;
 }
