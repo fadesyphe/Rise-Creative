@@ -23,11 +23,19 @@ for (let i = 0; i < dots.length; i++) {
 		let dotActive = document.querySelector('.dot.active');
 		let testimonialItemActive = document.querySelector('.testimonial_info--active');
 
+		let testimonialOffset; //???? fix logic offset
+
 		if (dotActive === dots[i]) {
 			return
 		}
-
-		let testimonialOffset = 605 * (-i); //???? fix logic offset
+		if (i === 0) {
+			testimonialOffset = 435
+		} else if (i === 1) {
+			testimonialOffset = -170
+		} else {
+			testimonialOffset = -770 * (i-1)
+		}
+		
 		testimonialCarousel.style.transition = '0.5s ease';
 		testimonialCarousel.style.left = `${testimonialOffset}px`;
 		
@@ -38,3 +46,9 @@ for (let i = 0; i < dots.length; i++) {
 		testimonialItems[i].classList.add('testimonial_info--active');
 	})
 }
+
+const formSubmit = document.querySelector('.form_sub input');
+formSubmit.addEventListener('click', (e) => {
+	e.preventDefault();
+	alert('')
+})
